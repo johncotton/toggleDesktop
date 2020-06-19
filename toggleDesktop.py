@@ -17,12 +17,10 @@ def main():
 	else:
 		off()
 
-
 def on():
 	print('on')
 	os.system("defaults write com.apple.finder CreateDesktop true")
 	os.system("killall Finder")
-
 def off():
 	print('off')
 	os.system("defaults write com.apple.finder CreateDesktop false")
